@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.0
 
 import PackageDescription
 
@@ -12,7 +12,7 @@ let package = Package(
     targets: [
         .target(name: "COpenCombineHelpers"),
         .target(name: "OpenCombine", dependencies: [
-            .target(name: "COpenCombineHelpers", .when(platforms: [.macOS, .linux, .iOS])
+            "COpenCombineHelpers"
         ]),
         .target(name: "OpenCombineDispatch", dependencies: ["OpenCombine"]),
         .target(name: "OpenCombineFoundation", dependencies: ["OpenCombine",
