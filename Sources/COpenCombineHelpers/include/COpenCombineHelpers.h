@@ -22,6 +22,7 @@
 extern "C" {
 #endif
 
+#if !defined(__wasi__)
 #pragma mark - CombineIdentifier
 
 uint64_t opencombine_next_combine_identifier(void)
@@ -73,6 +74,8 @@ void opencombine_unfair_recursive_lock_dealloc(OpenCombineUnfairRecursiveLock lo
 #pragma mark - Breakpoint
 
 void opencombine_stop_in_debugger(void) OPENCOMBINE_SWIFT_NAME(__stopInDebugger());
+
+#endif // !defined(__wasi__)
 
 #pragma mark - Type metadata
 
