@@ -5,6 +5,7 @@
 //  Created by Sergej Jaskiewicz on 23/09/2019.
 //
 
+#if !defined(__wasi__)
 #include "COpenCombineHelpers.h"
 
 #include <atomic>
@@ -241,3 +242,4 @@ void opencombine_stop_in_debugger(void) {
 }
 
 } // extern "C"
+#endif

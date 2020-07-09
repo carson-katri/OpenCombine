@@ -11,6 +11,7 @@
 #include <iterator>
 #include <cstddef>
 #include <cstring>
+#include <cerrno>
 
 namespace opencombine {
 
