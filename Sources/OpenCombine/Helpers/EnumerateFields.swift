@@ -7,10 +7,10 @@
 
 import COpenCombineHelpers
 
-internal typealias FieldEnumerator =
+public typealias FieldEnumerator =
     (_ fieldName: UnsafePointer<CChar>, _ fieldOffset: Int, _ fieldType: Any.Type) -> Bool
 
-internal func enumerateFields(ofType type: Any.Type,
+public func enumerateFields(ofType type: Any.Type,
                               allowResilientSuperclasses: Bool,
                               enumerator: FieldEnumerator) {
     // A neat trick to pass a Swift closure where a C function pointer is expected.
