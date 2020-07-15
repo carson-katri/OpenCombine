@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/MaxDesiatov/Runtime.git",
+        "state": {
+          "branch": "wasi-build",
+          "revision": "a617ead8a125a97e69d6100e4d27922006e82e0a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
